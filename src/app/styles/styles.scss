@@ -1,0 +1,52 @@
+
+*, :after, :before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+  font-size: 62.5%;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+html, body, #root, #app {
+  height: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0 8rem;
+}
+
+@media  screen and (min-width: 1200px) {
+  .wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
