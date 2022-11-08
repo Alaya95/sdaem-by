@@ -1,0 +1,114 @@
+@import 'src/app/styles/mixins';
+
+.header {
+  @include  flex(column, normal, space-between);
+  width: 100%;
+  margin-bottom: 40px;
+
+  &__top {
+    @include  flex(row, center, space-between);
+    padding: 10px 0;
+  }
+
+  &__bottom {
+    @include  flex(row, center, space-between);
+    padding: 20px 0;
+  }
+}
+
+.subnav {
+  @include  flex(row, center, normal);
+
+  &__link {
+    display: flex;
+    margin-right: 80px;
+    transition: ease-in-out 0.5s;
+
+    &:hover {
+      transition: ease-in-out 0.5s;
+      color: var(--gray);
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    & svg {
+      margin-left: 5px;
+    }
+  }
+}
+
+.yellow {
+  & path {
+    fill: #FFD54F;
+  }
+}
+
+.nav {
+  @include  flex(row, center, center);
+
+  &__link {
+    @include font(400, 1.4rem, 1.7rem);
+    margin-right: 57px;
+    color: var(--gray);
+
+    &:hover {
+      color: var(--dark-grey);
+      transition: ease-in-out 0.5s;
+    }
+
+
+    & svg {
+      margin-right: 5px;
+    }
+  }
+}
+
+.user__menu {
+  @include  flex(row, center, center);
+}
+
+.auth {
+  @include font (500, 1.4rem, 1.7rem);
+  color: var(--dark-purple);
+  transition: ease-in-out 0.5s;
+
+  &:hover {
+    color: var(--light-purple);
+    transition: ease-in-out 0.5s;
+  }
+}
+
+.favorite {
+  @include  flex(row, center, center);
+  color: var(--gray);
+  margin-right: 40px;
+  transition: ease-in-out 0.5s;
+
+  & svg {
+    width: 16px;
+    margin-left: 10px;
+    fill: var(--gray);
+    transition: ease-in-out 0.5s;
+  }
+
+  &:hover {
+    color: var(--dark-grey);
+    transition: ease-in-out 0.5s;
+
+    & svg {
+      transition: ease-in-out 0.5s;
+      fill:var(--dark-grey);
+    }
+  }
+}
+
+.link__btn {
+  background: linear-gradient(90deg, #9D94FF 0%, #6B50E9 94.5%);
+  border-radius: 19px;
+  padding: 10px 15px;
+  @include font (700, 1.4rem, 1.7rem);
+
+  color: var(--white);
+}
