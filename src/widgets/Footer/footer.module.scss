@@ -1,0 +1,28 @@
+@import "src/app/styles/mixins";
+
+.footer {
+  flex: 0;
+  display: flex;
+  padding: 4rem 0 5rem 0;
+  width: 100%;
+
+  &__logo {
+    margin-bottom: 36px;
+  }
+
+  &__sublogo {
+    @include font(500, 1.2rem,1.5rem);
+
+    text-transform: uppercase;
+    color: #1E2123;
+  }
+
+}
+
+.info{
+  margin-right: 30px;
+  &__data {
+    @include font(400,1.1rem, 1.3rem);
+    color: var(--gray);
+  }
+}

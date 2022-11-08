@@ -1,0 +1,22 @@
+@mixin flex ($direction, $align, $justify) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin grid () {
+  display: grid;
+}
+
+@mixin font ($weight, $size, $lineHeight) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $lineHeight;
+}
+
+@mixin square ($radius) {
+  @if $radius != 0 {
+    border-radius: $radius;
+  }
+}
