@@ -1,0 +1,35 @@
+@import 'src/app/styles/mixins';
+
+.news {
+  width: 100%;
+
+  &__list {
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    column-gap: 30px;
+    row-gap: 30px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    background: linear-gradient(90deg, rgba(148, 175, 255, 0.1) 0%, rgba(78, 100, 249, 0.1) 94.5%);
+    background-blend-mode: lighten;
+
+  }
+
+  &__item {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  &__header {
+    @include flex(row, center, space-between);
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    @include font(700, 3rem, 100%)
+  }
+}
+
+
