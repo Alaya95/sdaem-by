@@ -1,0 +1,13 @@
+.select {
+  background: #FFFFFF;
+  outline: none;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 9px 12px;
+  transition: ease-in-out 0.7s;
+
+  &:hover, &:active, &:focus {
+    transition: ease-in-out 0.5s;
+    border: 2px solid rgba(102, 78, 249, 0.8);
+  }
+}
