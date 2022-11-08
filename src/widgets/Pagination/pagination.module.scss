@@ -1,0 +1,20 @@
+.pagination {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 105px;
+
+  &__link {
+    display: block;
+    background: #FFFEFE;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #686868;
+    margin-right: 15px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
