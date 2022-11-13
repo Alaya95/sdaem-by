@@ -1,0 +1,73 @@
+@import 'src/app/styles/mixins';
+
+.news {
+  margin-bottom: 100px;
+
+
+  &__details {
+    width: 844px;
+    margin: 0 auto;
+  }
+
+  &__header {
+    margin-bottom: 40px;
+  }
+   &__title {
+     @include font(700, 3rem, 100%);
+     margin-bottom: 30px;
+   }
+
+  &__image {
+    margin-bottom: 40px;
+    & img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__recommend {
+    padding: 60px 0;
+    background: linear-gradient(90deg, rgba(148, 175, 255, 0.1) 10%, rgba(78, 100, 249, 0.1) 94.5%);
+  }
+
+  &__text {
+    @include font(400, 1.6rem, 150%);
+    margin-bottom: 65px;
+
+    & p {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__wrapper {
+    @include flex (row, center, space-between);
+  }
+
+  &__socials {
+    @include flex (row, center, normal);
+
+    & p {
+      margin-right: 15px;
+    }
+
+    & a {
+      margin-right: 20px;
+
+      &:last-child {
+        margin-right:0;
+      }
+    }
+  }
+
+  &__date {
+    background: rgba(102, 78, 249, 0.2);
+    color: var(--purple);
+  }
+}
+
+.title {
+  @include font(700, 2.5rem, 100%);
+  @include font(700, 2.5rem, 100%);
+  margin-bottom: 30px;
+  margin-left: 40px;
+}
