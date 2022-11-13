@@ -1,0 +1,11 @@
+@import 'src/app/styles/mixins';
+
+.date {
+  @include font(500, 1.4rem, 1.7rem);
+
+
+  border-radius: 18px;
+  padding: 10px 8px;
+  //color: var(--gray);
+  //background: var(--white-gray);
+}
