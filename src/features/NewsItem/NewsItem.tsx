@@ -2,6 +2,7 @@ import React, {FC} from "react";
 import cls from './newsItem.module.scss';
 import {NewsItemTypes} from "./NewsItemTypes";
 import classNames from "classnames";
+import {Link} from "react-router-dom";
 
 export const NewsItem: FC <NewsItemTypes> = ( { className,data}) => {
 return (
@@ -14,7 +15,7 @@ return (
             <p className={cls.news__desc}>{data.desc}</p>
             <div className={cls.news__bottom}>
                 <p className={cls.news__data}>{data.date}</p>
-                <a href='/' className={cls.news__link}>Читать</a>
+                <Link to={`/news/${data.id}`} className={cls.news__link}>Читать</Link>
             </div>
         </div>
     </div>

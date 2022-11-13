@@ -2,16 +2,16 @@ import React from 'react';
 import './app/index.scss';
 
 import { Header } from "./widgets/Header/Header";
-import {Footer} from "./widgets/Footer/Footer";
-import {News} from "./pages/News/News";
+import { Footer } from "./widgets/Footer/Footer";
+import { AppRouter } from "./Routes";
 
 function App() {
   return (
     <div id="app" className="app">
         <div className="wrapper">
+            <Header />
             <div className="content">
-                <Header />
-                <News />
+                <AppRouter />
             </div>
             <Footer />
         </div>

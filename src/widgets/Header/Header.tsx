@@ -2,8 +2,9 @@ import React from 'react';
 import cls from './header.module.scss';
 import classNames from "classnames";
 import {Logo} from "../Logo/Logo";
-import { ReactComponent as HeartSvg }  from '../../app/assets/icons/heart.svg';
+import {ReactComponent as HeartSvg} from '../../app/assets/icons/heart.svg';
 import {ReactComponent as LocationSvg} from "../../app/assets/icons/location.svg";
+import {Link, NavLink} from "react-router-dom";
 
 /* Настройки навбаров в хедере*/
 const navTopItems = [
@@ -12,20 +13,20 @@ const navTopItems = [
         textLink: 'Главная',
     },
     {
-        url: '/',
+        url: 'news',
         textLink: 'Новости',
     },
     {
-        url: '/',
+        url: 'tarifs',
         textLink: 'Размещение и тарифы',
     },
     {
-        url: '/',
+        url: 'announce',
         textLink: 'Объявления на карте',
-        icons: <LocationSvg />
+        icons: <LocationSvg/>
     },
     {
-        url: '/',
+        url: 'contacts',
         textLink: 'Контакты',
     },
 ]
@@ -33,7 +34,7 @@ const subNavBottomItem = [
     {
         url: '/',
         textLink: 'Квартиры на сутки',
-        icons: <LocationSvg className={ cls.yellow  } />
+        icons: <LocationSvg className={cls.yellow}/>
     },
     {
         url: '/',
@@ -50,34 +51,44 @@ const subNavBottomItem = [
 ]
 
 export const Header = () => {
-  return (
-    <header id='header' className={cls.header}>
-            <div className={cls.header__top}>
-                <nav className={cls.nav}>
-                    {navTopItems.map((item, index) => (
-                        <a href={item.url} className={cls.nav__link} key={index}>
-                            {item.icons}{ item.textLink}
-                        </a>
-                    ))}
-                </nav>
+    return (
+        <header id='header' className={cls.header}>
+            <div className="container">
+                <div className={cls.header__top}>
+                    <nav className={cls.nav}>
+                        {navTopItems.map((item, index) => (
+                            <Link to={`${item.url}`} className={cls.nav__link} key={index}>
+                                {item.icons}{item.textLink}
+                            </Link>
+                        ))}
+                    </nav>
 
-                <div className={cls.user__menu}>
-                    <a href="/" className={cls.favorite}> Закладки <HeartSvg /></a>
-                    <a href="/" className={cls.auth}> Вход и регистрация</a>
+                    <div className={cls.user__menu}>
+                        <Link to={`favorites`} className={cls.favorite}> Закладки <HeartSvg/></Link>
+                        <Link to={`auth`} className={cls.auth}>
+                            Вход и регистрация
+                        </Link>
+                    </div>
+                </div>
+                <div className={cls.header__bottom}>
+                    <Logo/>
+                    <div  className={cls.subnav}>
+                        {subNavBottomItem.map((item, index) => (
+                            <NavLink
+                                to={item.url}
+                                className={
+                                    classNames(cls.subnav__link)
+                                }
+                                key={index}
+                            >
+                                {item.textLink} {item.icons}
+                            </NavLink>
+                        ))}
+                    </div>
+
+                    <Link to="/" className={cls.link__btn}> + разместить объявление </Link>
                 </div>
             </div>
-            <div className={cls.header__bottom}>
-                <Logo />
-                <div className={cls.subnav}>
-                    {subNavBottomItem.map((item, index) => (
-                        <a href={item.url} className={cls.subnav__link} key={index}>
-                            { item.textLink} {item.icons}
-                        </a>
-                    ))}
-                </div>
-
-                <a href="/" className={cls.link__btn}> + разместить объявление </a>
-            </div>
-    </header>
-  );
+        </header>
+    );
 };
