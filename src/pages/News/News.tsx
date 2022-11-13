@@ -53,20 +53,23 @@ const arrNews = [{
 export const News = () => {
     return (
         <div className={cls.news}>
-            <BreadCrumbs />
+            <div className='container'>
 
-            <div className={cls.news__header}>
-                <h3 className={cls.news__title}>Новости</h3>
+                <BreadCrumbs />
 
-               <Search />
+                <div className={cls.news__header}>
+                    <h3 className={cls.news__title}>Новости</h3>
+
+                   <Search />
+                </div>
+                <div className={cls.news__list}>
+                    {arrNews.map((item, index) => {
+                       return (<NewsItem className={cls.news__item} key={index} data={item}/>)
+                    }
+                    )}
+                </div>
+                <Pagination />
             </div>
-            <div className={cls.news__list}>
-                {arrNews.map((item, index) => {
-                   return (<NewsItem className={cls.news__item} key={index} data={item}/>)
-                }
-                )}
-            </div>
-            <Pagination />
         </div>
     );
 }
