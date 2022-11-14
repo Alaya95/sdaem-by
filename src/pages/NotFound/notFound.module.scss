@@ -1,0 +1,86 @@
+@import 'src/app/styles/mixins.scss';
+
+.notfound {
+  width: 100%;
+  background: url("../../app/assets/img/bg_1.png") var(--dark-purple) center;
+
+  &__point {
+    grid-row: span 1;
+    grid-column: span 2;
+
+    &:first-child {
+      margin-right: auto;
+    }
+
+    &:last-child {
+      margin-left: auto;
+    }
+  }
+
+  &__wrapper {
+    padding: 5rem 0;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+
+  &__content {
+    @include flex(column, normal, center);
+  }
+
+  &__title {
+    @include font(700, 6rem, 7rem);
+
+    margin-bottom: 20px;
+  }
+
+  &__title, &__text {
+    color: var(--white);
+  }
+
+  &__title, &__text, &__code {
+    -ms-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  &__text {
+    @include font(500, 2rem, 2.4rem);
+    margin-bottom: 40px;
+  }
+
+  &__code {
+    @include font(700, 30rem, auto);
+    color: var(--white);
+    opacity: 0.3;
+    text-align: center;
+  }
+
+  &__link {
+    padding: 1.2rem 2.4rem;
+    background: var(--yellow-bg);
+    border-radius: 33px;
+    width: fit-content;
+    transition: ease-in-out 0.3s;
+
+    &:hover {
+      background: var(--yellow);
+      transition: ease-in-out 0.3s;
+    }
+
+    &:active {
+      background: var(--yellow-color);
+    }
+
+    & svg {
+      margin-right: 1rem;
+
+      & path {
+        fill: var(--black);
+
+      }
+    }
+  }
+}
