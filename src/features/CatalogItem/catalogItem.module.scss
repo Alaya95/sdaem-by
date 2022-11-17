@@ -1,0 +1,134 @@
+@import 'src/app/styles/mixins';
+
+.item {
+  background: #FFFEFE;
+  border-radius: 10px;
+  &__image {
+    width: 100%;
+    border-radius: 10px;
+
+    & img {
+      width: 100%;
+      border-radius: inherit;
+    }
+  }
+
+  &__content {
+    padding: 1.5rem 2rem;
+  }
+
+  &__header{
+    @include flex(row, center, space-between);
+    margin-bottom: 1.5rem;
+  }
+
+  &__price {
+
+    & p {
+      @include font(700, 2rem, 2.4rem);
+      color: var(--dark-purple);
+    }
+
+    & span {
+      @include font(400, 1.4rem, 1.7rem);
+      color: var(--light-gray);
+    }
+  }
+
+  &__person {
+    background: #F8F8F8;
+    border-radius: 18px;
+    padding: 8px;
+    @include font(500, 1.4rem, 1.7rem);
+    @include flex(row, center, center);
+    & svg {
+      margin-right: 0.6rem;
+    }
+  }
+
+  &__rooms {
+    background: #F8F8F8;
+    border-radius: 18px;
+    padding: 8px;
+    @include font(500, 1.4rem, 1.7rem);
+    @include flex(row, center, center);
+  }
+
+  &__text {
+    @include font(400, 1.2rem, 150%);
+    color: var(--gray);
+    margin-bottom: 13px;
+  }
+  &__location {
+    @include flex(row, center, normal);
+
+    & p {
+      margin-right: 30px;
+    }
+  }
+
+  &__address {
+    //
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+
+
+    & p {
+      @include font(500, 1.6rem, 1.9rem);
+      @include flex(row, center, normal);
+      margin-bottom: 11px;
+      color:var(--dark-black);
+
+      & svg {
+        margin-right: 0.8rem;
+
+        & path {
+          fill: var(--light-gray);
+        }
+      }
+    }
+  }
+
+
+  &__bottom {
+    @include flex(row, center, space-between);
+  }
+
+  &__favorite {
+    @include flex(row, center,center);
+    background: rgba(235, 87, 87, 0.1);
+    outline: none;
+    border: none;
+    border-radius: 22px;
+    transform: rotate(0.25deg);
+    padding: 10px;
+
+    & svg {
+      fill: #EB5757;
+    }
+  }
+
+  &__btn {
+    border: none;
+    outline: none;
+    @include flex(row, center,center);
+    background: #F8F8F8;
+    border-radius: 18px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #664EF9;
+    padding: 11px 15px;
+
+    & svg {
+      margin-right: 13px;
+    }
+  }
+}
+
+.hr {
+  width: 100%;
+  height: 1px;
+  color:#4E64F9;
+  margin-bottom: 1.3rem;
+}
