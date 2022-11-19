@@ -1,0 +1,75 @@
+@import "src/app/styles/mixins";
+
+.checkbox {
+  @include flex(row, center, normal);
+  @include font(400, 1.4rem, 1.7rem);
+
+  & label {
+    @include userSelect(none);
+  }
+
+  & input[type=checkbox] {
+    display: block;
+    position: relative;
+    width: 0;
+    height: 2rem;
+    cursor: pointer;
+    margin-right: 3rem;
+
+    &:checked:before, &:before, &:after, &:checked:after {
+      content: "";
+      display: block;
+      position: absolute;
+    }
+
+    &:checked:before, &:before {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 0.5rem;
+    }
+
+    &:checked {
+      &:before, &:hover:before {
+        border: 1px solid var(--dark-purple);
+        background-color: var(--dark-purple);
+        transition: all 0.2s linear;
+      }
+    }
+
+    &:before {
+      border: 1px solid #F0F0F0;
+      background-color: #F8F8F8;
+    }
+
+    &:hover:before {
+      background: rgba(102, 78, 249, 0.2);
+      border: 1px solid rgba(102, 78, 249, 0.2);
+    }
+
+    &:before, &:hover:before {
+      transition: ease-out 0.3s;
+    }
+
+    &:after {
+      @include transform(rotate(180deg));
+
+      width: 0;
+      height: 0;
+      border: 0 solid #F0F0F0;
+      top: 0;
+      left: 2rem;
+      transition: all 0.4s linear;
+    }
+
+    &:checked:after, &:hover:after {
+      @include transform(rotate(45deg));
+
+      width: 0.5rem;
+      height: 1rem;
+      border: solid var(--white);
+      border-width: 0 0.2rem 0.2rem 0;
+      top: 0.4rem;
+      left: 0.7rem;
+    }
+  }
+}
