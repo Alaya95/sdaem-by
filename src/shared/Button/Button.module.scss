@@ -1,0 +1,60 @@
+@import 'src/app/styles/mixins';
+
+.base {
+  @include flex(row, center, center);
+  @include font(600, 1.4rem, 100%);
+
+  border: none;
+  outline: none;
+  border-radius: 2.2rem;
+  padding: 1rem 1.5rem;
+
+
+  box-shadow: 0 5px 20px rgba(0, 96, 206, 0.1);
+
+  &:hover {
+    cursor: pointer;
+  }
+  &:active{}
+  & svg {
+    margin-right: 1rem;
+  }
+}
+
+.inherit {
+  color: var(--black);
+  background: #FFFFFF;
+}
+
+.primary{
+  background: #664EF9;
+  color: var(--white);
+
+  & svg {
+    &  path {
+      stroke: var(--white);
+    }
+  }
+
+  &:hover {}
+  &:active {}
+}
+
+.secondary{
+  &:hover {}
+  &:active {}
+}
+.success{}
+.error{}
+.info{}
+.warning{}
+.outlined{}
+.contained{}
+.small{}
+.medium{}
+.large{}
+
+
+.fullWidth {
+  width: 100%;
+}
