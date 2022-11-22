@@ -1,20 +1,27 @@
+@import 'src/app/styles/mixins';
+
 .pagination {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 105px;
+  @include flex(row, center, space-around);
 
   &__link {
-    display: block;
-    background: #FFFEFE;
-    border-radius: 10px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
+    @include font(400,1.8rem,2.2rem);
+    @include flex(row, center, center);
+
+    background: none;
+    margin-right: 1.5rem;
     color: #686868;
-    margin-right: 15px;
+
+    &:hover {
+     border-bottom:  0.2rem solid #E4E2E2;
+    }
+
     &:last-child {
       margin-right: 0;
     }
   }
+}
+
+.active {
+  border-bottom:  0.2rem solid var(--yellow-bg);
+  color: var(--dark-black);
 }
