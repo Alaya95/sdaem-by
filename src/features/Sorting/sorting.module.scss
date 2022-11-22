@@ -1,0 +1,23 @@
+@import 'src/app/styles/mixins';
+
+.sort {
+  @include flex(row, center, space-between);
+  margin-bottom: 80px;
+
+  &__btn {
+    margin-right: 2rem;
+  }
+
+  &__select {
+    width: 20rem;
+  }
+
+  &__actions {
+    @include flex(row, center, space-between);
+  }
+
+  &__view {
+    @include flex(row, center, space-between);
+    margin-right: 8rem;
+  }
+}
