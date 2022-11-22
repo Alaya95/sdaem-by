@@ -1,0 +1,207 @@
+@import 'src/app/styles/mixins';
+
+.catalog {
+  background: linear-gradient(90deg, rgba(148, 175, 255, 0.1) 0%, rgba(78, 100, 249, 0.1) 94.5%);
+  padding-top: 4.5rem;
+
+  &__title {
+    @include font(700, 2.5rem, 100%);
+    color: var(--black);
+  }
+
+  &__recommend {
+    width: 100%;
+  }
+
+  &__sort {
+    padding: 2rem;
+    background: none;
+  }
+}
+
+.recommend {
+  &__title {
+    @include font(500, 1.6rem, 100%);
+    color: var(--black);
+    margin-bottom: 1.5rem;
+  }
+
+  &__wrapper {
+    @include flex(row, center, normal);
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 5.7rem;
+  }
+
+  &__link {
+    @include font(400, 1.4rem, 100 &);
+    color: var(--dark-purple);
+    text-align: center;
+    padding: 0.6rem 1rem;
+    background: rgba(102, 78, 249, 0.1);
+    border-radius: 1.7rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+
+.filter {
+  background: var(--white);
+  box-shadow: 0 2rem 4rem rgba(39, 95, 158, 0.08);
+
+  &__top {
+    border-bottom: 0.1rem solid rgba(78, 100, 249, 0.1);
+  }
+
+  &__bottom {
+    display: none;
+    padding: 3rem 0;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  &__btn {
+    & svg {
+      margin-right: 0;
+      margin-left: 0.7em;
+    }
+  }
+
+  &__fields {
+    @include flex(row, normal, space-between);
+
+    & hr {
+      opacity: 0.1;
+      background: #664EF9;
+      transform: rotate(180deg);
+    }
+  }
+
+  &__field {
+    @include flex(row, center, center);
+    padding: 2.2rem 0;
+
+    & label {
+      margin-right: 1em;
+    }
+
+    & div {
+      display: flex;
+      flex-direction: row;
+
+      & p {
+        padding: 9px 12px;
+      }
+
+      & input {
+        width: 8rem;
+        border-radius: 2rem;
+        padding: 0.9rem 1.2rem;
+        border: 0.2rem solid var(--white);
+        transition: ease-in-out 0.7s;
+        background: none;
+        outline: none;
+        background: rgba(102, 78, 249, 0.05);
+
+        &::placeholder {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 17px;
+        }
+
+        &:hover, &:active, &:focus {
+          transition: ease-in-out 0.5s;
+          border: 2px solid rgba(102, 78, 249, 0.8);
+        }
+      }
+    }
+  }
+
+  &__options {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+  }
+
+  &__selects {
+    @extend .filter__options;
+
+    grid-row: span 1;
+    grid-column: span 5;
+    margin-bottom: 1rem;
+  }
+
+  &__select {
+    grid-row: span 1;
+    grid-column: span 1;
+    width: fit-content;
+    background: #F8F8F8;
+  }
+}
+
+
+.list {
+  &__title {
+    @include font(700, 2rem, 100%);
+    margin-bottom: 4rem;
+    color: var(--black);
+  }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    margin-bottom: 8rem;
+  }
+
+  &__footer {
+    @include flex(row, center, space-between);
+    margin-bottom: 5.8rem;
+  }
+}
+
+.share {
+  @include flex(row, center, space-between);
+
+  & p {
+    margin-right: 1rem;
+  }
+ }
+.about {
+  background: url("../../app/assets/img/bg_1.png") var(--dark-purple) center;
+  background-size: cover;
+
+  &__wrapper {
+    @include flex(column, center, center);
+    height: 430px;
+  }
+
+  &__title, &__text, &__btn {
+    margin-bottom: 2rem;
+  }
+
+  &__title, &__text {
+    color: var(--white);
+  }
+
+  &__title {
+    @include font(700,2.5rem,3rem);
+  }
+
+  &__text {
+    @include font(500,1.6rem,1.9rem);
+  }
+
+  &__btn {
+    & svg {
+      & path {
+        fill: var(--yellow);
+      }
+    }
+  }
+}
