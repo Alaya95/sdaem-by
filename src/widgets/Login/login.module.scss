@@ -1,0 +1,50 @@
+@import '../../app/styles/mixins';
+
+.auth {
+  @include flex(column, normal, center);
+  padding: 5rem;
+  background: var(--white);
+
+  &__title {
+    @include font(700, 2.5rem, 3rem);
+    text-align: center;
+    color: #000000;
+    margin-bottom: 1.5rem;
+  }
+
+  &__desc {
+    @include font(400, 1.4rem, 1.7rem);
+    text-align: center;
+    color: var(--dark-grey);
+    margin-bottom: 3.5rem;
+  }
+}
+
+.auth__toggle {
+  @include flex(row, center, normal);
+
+  & span:hover {
+    @include userSelect(none);
+    cursor: pointer;
+    color: var(--dark-purple);
+  }
+}
+
+.row {
+  @include flex(row, center, space-between);
+  margin-bottom: 4rem;
+}
+
+.link {
+  @include userSelect(none);
+  @include font(500, 1.4rem, 2rem);
+  color: var(--dark-purple);
+  margin-left: 2rem;
+}
+
+.btn {
+  @include font(700, 1.6rem, 2.4rem);
+  //  color: var(--black);
+  //  background: var(--yellow-bg);
+  border-radius: 3.3rem;
+}
