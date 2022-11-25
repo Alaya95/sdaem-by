@@ -3,7 +3,7 @@ import cls from './login.module.scss';
 import {Input} from "../../shared/Input/Input";
 import {ReactComponent as UserSvg} from "../../app/assets/icons/user.svg";
 import {ReactComponent as PasswordSvg} from "../../app/assets/icons/password-lock.svg";
-import {SwitchCheckbox} from "../../shared/SwitchToggle/SwitchCheckbox";
+import {SwitchCheckbox} from "../../shared/SwitchCheckbox/SwitchCheckbox";
 import {PopUp} from "../../shared/PopUp/PopUp";
 import {Button} from "../../shared/Button/Button";
 
