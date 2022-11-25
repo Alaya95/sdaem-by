@@ -41,7 +41,12 @@
 }
 
 .secondary{
-  &:hover {}
+  color: var(--black);
+  background: var(--yellow-bg);
+
+  &:hover {
+    background: var(--yellow);
+  }
   &:active {}
 }
 .success{}
@@ -51,7 +56,11 @@
 .outlined{}
 .contained{}
 .small{}
-.medium{}
+
+.medium {
+  @include font(700, 1.6rem, 2.4rem);
+  border-radius: 3.3rem;
+}
 .large{}
 
 
