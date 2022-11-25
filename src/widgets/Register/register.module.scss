@@ -1,0 +1,61 @@
+@import '../../app/styles/mixins';
+
+.register {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  padding: 5rem;
+  background: var(--white);
+  max-width: 80rem;
+}
+
+.title {
+  @include font(700, 2.5rem, 3rem);
+  color: var(--dark-black);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.column {
+  @include flex(column, normal, space-around);
+  grid-column: span 1;
+}
+
+.rule {
+  @include font(500, 1.4rem, 150%);
+  text-align: left;
+  max-width: 30rem;
+
+  & span {
+    @include font(600, 1.4rem, 150%);
+  }
+
+  & li::before {
+    content: '\2022';
+    margin-right: 5px;
+  }
+}
+
+.checkbox {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.link {
+  @include font(500, 1.4rem, 2rem);
+  color: var(--dark-purple);
+
+  &:hover {
+    color: var(--light-purple);
+  }
+}
+
+.box {
+  & span {
+    margin-right: 0.5rem;
+  }
+}
+
+.rule, .box {
+  color: var(--dark-grey);
+}
