@@ -1,7 +1,17 @@
-import React from 'react';
+import React, {FC} from 'react';
+import cls from "./input.module.scss";
+import {InputPropsTypes} from "./InputTypes";
 
-export const Input = () => {
+export const Input: FC<InputPropsTypes> = ({type, className, error,icon, placeholder, ...otherProps}) => {
     return (
-            <input type="text"/>
+        <div className={cls.field}>
+            {icon}
+            <input
+                {...otherProps}
+                placeholder={placeholder}
+                className={cls.input}
+                type={type}
+            />
+        </div>
     );
 }

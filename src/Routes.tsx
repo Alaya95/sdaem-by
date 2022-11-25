@@ -2,8 +2,6 @@ import React from 'react';
 import { Routes, Route} from "react-router-dom";
 import {Main} from "./pages/Main/Main";
 import {News} from "./pages/News/News";
-import {Register} from "./pages/Register/Register";
-import {Login} from "./pages/Login/Login";
 import {NewsDetail} from "./pages/NewsDetail/NewsDetail";
 import {Tarifs} from "./pages/Tarifs/Tarifs";
 import {Catalog} from "./pages/Catalog/Catalog";
@@ -24,8 +22,6 @@ export const AppRouter = () => {
                     </Route>
                     <Route path={'tarifs'} element={<Tarifs />} />
                     <Route path={'announce'} element={<Announce />} />
-                    <Route path={'register'} element={<Register />} />
-                    <Route path={'auth'} element={<Login />} />
                     <Route path={'catalog'} element={<Catalog />} />
                     <Route path={'contacts'} element={<Contacts />} />
                     <Route path={'account'} element={<Account />} />

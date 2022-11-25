@@ -1,0 +1,73 @@
+@import 'src/app/styles/mixins';
+
+.field {
+  @include flex(row, center, space-between);
+  @include font(400, 1.4rem, 1.7rem);
+
+  margin-bottom: 2rem;
+  padding: 1.5rem 2rem;
+  border-radius: 3rem;
+  color: rgb(36, 41, 47);
+  vertical-align: middle;
+  background-color: #F7F7F7;;
+  border: 2px solid #F7F7F7;;
+  outline: none;
+
+  & svg {
+    margin-right: 1rem;
+  }
+
+  & input {
+    outline: none;
+    border: none;
+    cursor: text;
+
+    &::placeholder {
+      @include font(500, 1.4rem, 1.7rem);
+      color: #686868;
+    }
+  }
+
+  &:focus-within {
+    border-color: rgba(78, 100, 249, 0.8);
+    outline: none;
+    background: #FFFEFE;
+
+    & svg {
+      fill: #664EF9;
+    }
+  }
+
+  &:hover {
+    background: #FFFEFE;
+    border-color: rgba(78, 100, 249, 0.8);
+    border-radius: 3rem;
+
+    & svg {
+      fill: #664EF9;
+    }
+
+    & input {
+      background: #FFFEFE;
+
+      &::placeholder {
+        color: #1E2123;
+      }
+    }
+  }
+
+
+  & svg {
+    align-self: center;
+  }
+}
+
+.input {
+  border: 0;
+  font-size: inherit;
+  font-family: inherit;
+  background-color: transparent;
+  appearance: none;
+  color: inherit;
+  width: 100%;
+}
