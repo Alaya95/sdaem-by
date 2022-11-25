@@ -7,7 +7,7 @@ import {Button} from "../../shared/Button/Button";
 
 export const Register = () => {
     return (
-        <PopUp visible={true}>
+        <PopUp>
             <div className={cls.register}>
                 <div className={cls.column}>
                     <h3 className={cls.title}>Регистрация</h3>
