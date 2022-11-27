@@ -1,0 +1,137 @@
+@import 'src/app/styles/mixins';
+
+.contact {
+  background: url("../../app/assets/img/bg_1.png") var(--dark-purple) center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+  @include flex(row, start, space-between);
+  padding: 7rem 0;
+}
+
+.info {
+  color: var(--white);
+  width: 50rem;
+
+  &__title, &__description, &__list {
+    margin-bottom: 3rem;
+  }
+
+  &__title {
+    @include font(700, 3rem, 100%);
+  }
+
+  &__description {
+    @include font(500, 1.6rem, 150%);
+  }
+
+  &__list {
+    & li {
+
+      @include flex(row, center, normal);
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__message {
+    @include flex(row, center, center);
+    padding: 2.8rem;
+    background: rgba(80, 57, 189, 0.5);
+    border-radius: 10px;
+    margin-top: 4rem;
+
+    & svg {
+      width: 3.5rem;
+      height: 3.5rem;
+      margin-right: 2rem;
+
+      & path {
+        fill: #5039BD;
+      }
+    }
+  }
+}
+
+.form {
+  background: var(--white-gray);
+  padding: 4rem;
+  width: 62.5rem;
+  box-shadow: 0 2rem 4rem rgba(39, 95, 158, 0.2);
+  border-radius: 10px;
+
+  &__wrapper {
+    @include flex(row, flex-start, space-between);
+    margin-bottom: 3rem;
+    gap: 3rem;
+  }
+
+  &__label {
+    @include flex(column, flex-start, center);
+
+    & span {
+      @include userSelect(none);
+      margin-bottom: 1.5rem;
+    }
+
+    & textarea {
+      @include font(500, 1.4rem, 1.7rem);
+      width: 100%;
+      max-width: 60rem;
+      height: 20rem;
+      outline: none;
+      background: #F8F8F8;
+      border: 0.2rem solid #F8F8F8;
+      border-radius: 3rem;
+      resize: none;
+      padding: 1.5rem 2rem;
+      margin-bottom: 4rem;
+      transition: ease-in-out 0.3s;
+
+      &:focus, &:hover {
+        transition: ease-in-out 0.3s;
+        border-color: var(--dark-purple);
+      }
+    }
+  }
+}
+
+.icon {
+  @include flex(row, center, center);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  margin-right: 1rem;
+
+  & svg > path {
+    fill: var(--white);
+  }
+}
+
+.btn {
+  width: 20rem;
+  margin: 0 auto;
+}
+
+.social {
+  &__link {
+    @include flex(row, center, center);
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-bottom: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: ease-in-out 0.3s;
+
+    & svg > path {
+      fill: var(--white);
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transition: ease-in-out 0.3s;
+    }
+  }
+}
