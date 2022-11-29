@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import cls from './Main.module.scss';
 import {Filters} from "../../widgets/Filters/Filters";
 import {Link} from "react-router-dom";
@@ -16,6 +16,9 @@ import {ReactComponent as CardTitleSvg} from "../../app/assets/icons/move2.svg";
 import {CatalogItem} from "../../features/CatalogItem/CatalogItem";
 import {Select} from "../../shared/Select/Select";
 import {GalleryCard} from "../../features/GalleryCard/GalleryCard";
+import {useAppDispatch, useAppSelector} from "../../shared/hooks";
+import {getCities} from "../../entities/cities/actionsCities";
+import {getCitiesSelector} from "../../entities/cities/selectors";
 
 const CITIES = [
     {id: 1, name: "Минск", value: "minsk"},
@@ -99,6 +102,13 @@ const GALLERY_CARDS = [
 ]
 
 export const Main = () => {
+    const dispatch = useAppDispatch();
+    const arrCity = useAppSelector(getCitiesSelector);
+
+    console.log(arrCity)
+    useEffect(()=> {
+        dispatch(getCities())
+    }, []);
     return (
         <div className={cls.main}>
             <div className="container">
