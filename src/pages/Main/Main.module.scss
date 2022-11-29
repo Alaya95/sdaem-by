@@ -11,5 +11,329 @@
     border-radius: 0 0 40px 40px;
     background: url("../../app/assets/img/bg_1.png") var(--dark-purple) center;
     background-size: cover;
+    margin-bottom: 8.4rem;
   }
 }
+
+.link {
+  display: block;
+}
+
+.about {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+
+  &__title {
+    @include font(600, 1.4rem, 1.7rem);
+    margin-bottom: 1.5rem;
+    color: var(--dark-purple);
+    @include userSelect(none);
+    @include userSelect(none);
+  }
+
+  &__subtitle {
+    @include font(700, 2.5rem, 3rem);
+    margin-bottom: 3rem;
+  }
+
+
+
+  &__img {
+    width: 40rem;
+    height: 20rem;
+    background: url("../../app/assets/img/newphoto.png");
+    background-size: cover;
+    border-radius: 3rem;
+    margin-right: 2rem;
+    position: relative;
+    float: left;
+    margin-bottom: 1rem;
+
+    & svg {
+      position: absolute;
+      bottom: -1.5rem;
+      right: -1.5rem;
+    }
+  }
+
+  &__description {
+    grid-column: span 2;
+
+    & p {
+      @include font(400, 1.4rem, 150%);
+      margin-bottom: 3rem;
+      & span {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.news {
+  grid-column: span 1;
+  padding: 2rem;
+
+  &__links {
+    margin-bottom: 3rem;
+
+    & hr {
+      margin: 1rem 0;
+      background:  #664EF9;
+      opacity: 0.3;
+    }
+  }
+
+  &__link {
+    @include font(600, 1.4rem, 1.7rem);
+    @include flex(column, normal, normal);
+    @include userSelect(none);
+
+    & a {
+      margin-bottom: 0.5rem;
+
+      &:hover {
+        color: var(--dark-grey);
+      }
+    }
+
+    & span {
+      @include font(400, 1.2rem, 1.5rem);
+      color: var(--gray);
+    }
+  }
+
+  &__title {
+    @include font(700, 2.5rem, 3rem);
+    margin-bottom: 3rem;
+  }
+
+  &__more {
+    @include flex(row, center, normal);
+    @include font(700, 1.4rem, 1.7rem);
+    color: var(--dark-purple);
+
+    & svg > path {
+      stroke: var(--dark-purple);
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.presentation  {
+  background: url("../../app/assets/img/bg_1.png"), linear-gradient(to bottom, rgba(126, 106, 243, 1) 0%, rgba(101, 64, 205, 1) 100%);
+  background-size: 100% 50%;
+  background-position: top center;
+  background-repeat: no-repeat;
+  margin-bottom: 14rem;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 3rem;
+  }
+
+  &__box {
+    @include flex(column, center, center);
+    padding: 9rem 0;
+    max-width: 40rem;
+    margin: 0 auto;
+
+    & h3 {
+      @include font(700, 2.5rem,3rem);
+    }
+
+    & p {
+      @include font(500, 1.6rem,1.9rem);
+    }
+    & h3, & p {
+      color: var(--white);
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    & a {
+      background: #FFFFFF;
+      border-radius: 19px;
+      padding: 1rem 2rem;
+    }
+  }
+}
+
+
+.card {
+  grid-column: span 1;
+  grid-row: span 1;
+  padding: 3.7rem;
+  width: 40rem;
+  background: #FFFEFE;
+  box-shadow: 0 20px 40px rgba(135, 124, 202, 0.15);
+  border-radius: 10px;
+
+  &__title {
+    @include font(700, 1.8rem, 2.2rem);
+    color: var(--dark-purple);
+    width: 20rem;
+  }
+  &__desc {
+    @include font(500, 1.6rem,1.9rem);
+    color: var(--black);
+    margin-bottom: 3rem;
+  }
+
+  &__header {
+    @include flex(row, center, space-between);
+    margin-bottom: 2.5rem;
+  }
+
+  &__icon {
+    @include flex(row, center, center);
+    border-radius: 50%;
+    background: var(--white);
+    width: 10rem;
+    height: 10rem;
+    margin-right: 2rem;
+    box-shadow: 0 1rem 2rem rgba(127, 155, 187, 0.16);
+  }
+
+  &.gold {
+    background: linear-gradient(105.54deg, #FFD54F 33.53%, #FEC100 94.13%);
+  }
+}
+
+.rent {
+  margin-bottom: 9rem;
+  width: 100%;
+  &__header {
+    @include flex(row, center, space-between);
+    width: 100%;
+    margin-bottom: 6rem;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-bottom: 9rem;
+  }
+
+  &__select {
+    margin-right: 3rem;
+  }
+
+  &__footer {
+    @include flex(row, center, normal);
+
+
+    & p {
+      @include font (700,6rem,7rem);
+
+      & span {
+        color: var(--dark-purple);
+      }
+    }
+  }
+
+  &__link {
+    @include flex(row, center, center);
+    width: fit-content;
+    background: linear-gradient(90deg, #9D94FF 0%, #6B50E9 94.5%);
+    box-shadow: 0 1.5rem  4rem rgba(0, 96, 206, 0.15);
+    border-radius: 2rem;
+    padding: 1rem 1.8rem;
+    color: var(--white);
+
+    & svg > path {
+      stroke: var(--white);
+    }
+  }
+}
+
+.gallery {
+  margin-bottom: 9rem;
+  @include flex(row, normal, space-between);
+  gap: 3rem;
+
+  &__cards {
+    @include flex(row, center, start);
+    flex-wrap: wrap;
+    gap: 3rem;
+    height: fit-content;
+    width: fit-content;
+  }
+
+  //&__sidebar {}
+
+  &__links {
+    @include flex(column, start, center);
+    margin-bottom: 4rem;
+
+    & h4 {
+      @include font(700, 1.8rem, 2.2rem);
+      margin-bottom: 1.5rem;
+    }
+
+  }
+  &__link {
+      @include font(400, 1.4rem, 1.7rem);
+      @include flex(row, center, space-between);
+      width: 100%;
+      margin-bottom: 1rem;
+    max-width: 30rem;
+
+      & a {
+        color: #FEB700;
+        transition: 0.5s;
+
+        &:hover {
+          transition: 0.5s;
+          margin-left: 1rem;
+        }
+      }
+      & span {
+        color: #BDBDBD;
+      }
+    }
+}
+
+.hr {
+  margin: 0 1.5rem;
+  opacity: 0.1;
+  height: 5rem;
+  border: 1px solid var(--dark-purple);
+}
+
+.arrow {
+  @include flex(row, center, center);
+  width: 100%;
+  grid-column: span 3;
+
+  &__left, &__right {
+    @include flex(row, center, center);
+    padding: 1.3rem;
+    background: none;
+    outline: none;
+    border-radius: 50%;
+    border: 1px solid var(--dark-purple);
+
+    & svg > path {
+      stroke: var(--dark-purple);
+    }
+
+    &:hover {
+      cursor: pointer;
+      background: rgba(102, 78, 249, 0.1);
+    }
+  }
+  &__left {
+    @include transform(rotate(180deg));
+    margin-right: 1.3rem;
+  }
+}
+
