@@ -1,13 +1,13 @@
-import { combineReducers, configureStore } from '@reduxjs/toolkit';
-import citiesReducer from "../../entities/cities/citiesReducer";
-
-const rootReducer = combineReducers({
-    cities: citiesReducer
-});
+import {configureStore} from '@reduxjs/toolkit';
+import {rootReducer} from "./rootReducer";
+import {middlewareStore} from "./middleware";
 
 export const setupStore = () => {
     return configureStore({
         reducer: rootReducer,
+        middleware: (getDefaultMiddleware) => getDefaultMiddleware({
+            serializableCheck: false
+        }).concat(...middlewareStore),
     });
 };
 
