@@ -12,6 +12,10 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+### `yarn server`
+Starts the server in development mode using mock-up data.\
+Open [http://localhost:5000](http://localhost:3000) to view it in the browser.
+
 ### `yarn test`
 Launches the test runner in the interactive watch mode.
 
