@@ -5,8 +5,8 @@ import { ReactComponent as LocationSvg }  from '../../app/assets/icons/location.
 import { ReactComponent as ArrowSvg }  from '../../app/assets/icons/chevron-down.svg';
 import cls from './filters.module.scss';
 import cn from "classnames"
-import {CITIES, ROOMS} from "./data";
-
+import {ROOMS} from "./data";
+import {citiesModel} from "../../entities/cities";
 
 const filterNavItems: Array <{ id: number, textBtn:string }>= [
     {id: 1, textBtn: "Квартиры на сутки"},
@@ -15,6 +15,7 @@ const filterNavItems: Array <{ id: number, textBtn:string }>= [
     {id: 4, textBtn: "Авто напрокат"},
 ]
 
+
 export const Filters = () => {
     const [activeBtnIndex, setActiveBtnIndex] = useState(1)
 
@@ -22,15 +23,15 @@ export const Filters = () => {
         setActiveBtnIndex(index);
     };
 
+    const {data: cities = []} = citiesModel.citiesApi.useGetCitiesQuery('');
+
     return (
         <div>
             <div className={cls.filter}>
                 <div className={cls.filter__nav}>
                     {filterNavItems.map(({id, textBtn}, index) => {
                        return(
-                           <button
-                               key={id}
-                               onClick={() => clickMe(index) }
+                           <button key={id} onClick={() => clickMe(index) }
                                className={ cn(cls.filter__item, {
                                    [cls.active]: index === activeBtnIndex
                                })}
@@ -42,7 +43,7 @@ export const Filters = () => {
                 <div className={cls.filter__wrapper}>
                     <div className={cls.filter__field}>
                         <label>Город</label>
-                        <Select dataArr={ CITIES } />
+                        <Select dataArr={cities} />
                     </div>
                     <hr/>
                     <div  className={cls.filter__field}>
