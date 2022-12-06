@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "rentType": "",
+    "address": "",
+    "metro": "",
+    "district": "",
+    "price": "",
+    "perDay": "",
+    "rooms": "",
+    "persons": "",
+    "description": [
+      "Описание квартиры 1 абзац",
+      "Описание квартиры 1 абзац"
+    ],
+    "contacts": [
+      {
+        "phone": "",
+        "username": "",
+        "email": ""
+      }
+    ],
+    "square": ""
+  }
+]
