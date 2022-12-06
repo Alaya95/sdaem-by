@@ -1,12 +1,12 @@
+export interface NewsItemsData {
+    id: number
+    imgUrl: string
+    title: string
+    description: string[]
+    date: string
+}
 
 export interface NewsItemTypes {
-    data: {
-        id: number
-        imgUrl?: string
-        title: string
-        desc: string
-        date: string
-        link: string
-    }
+    data: NewsItemsData
     className?: string
 }
