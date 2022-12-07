@@ -1,74 +1,28 @@
 import React from "react";
-import {BreadCrumbs} from "../../widgets/BreadCrumbs/BreadCrumbs";
 import cls from './news.module.scss';
+import {BreadCrumbs} from "../../widgets/BreadCrumbs/BreadCrumbs";
 import {NewsItem} from "../../features/NewsItem/NewsItem";
 import {Pagination} from "../../widgets/Pagination/Pagination";
-import newsPhoto from '../../app/assets/img/newphoto.png';
 import {Search} from "../../widgets/Search/Search";
-
-const arrNews = [{
-    id: 1,
-    imgUrl: newsPhoto,
-    title: 'Линия Сталина: суровый отдых в усадьбах на сутки',
-    desc: 'Чем заняться в выходные? Когда нет безотлагательных домашних дел, а на улице хорошая погода, хочется уехать из города, чтобы сменить обстановку. Например, снять коттедж на сутки для семьи или большой компании друзей. А...',
-    date: '22.02.2022',
-    link: 'string',
-}, {
-    id: 1,
-    imgUrl: newsPhoto,
-    title: 'Линия Сталина: суровый отдых в усадьбах на сутки',
-    desc: 'Чем заняться в выходные? Когда нет безотлагательных домашних дел, а на улице хорошая погода, хочется уехать из города, чтобы сменить обстановку. Например, снять коттедж на сутки для семьи или большой компании друзей. А...',
-    date: '22.02.2022',
-    link: 'string',
-}, {
-    id: 1,
-    imgUrl: newsPhoto,
-    title: 'Линия Сталина: суровый отдых в усадьбах на сутки',
-    desc: 'Чем заняться в выходные? Когда нет безотлагательных домашних дел, а на улице хорошая погода, хочется уехать из города, чтобы сменить обстановку. Например, снять коттедж на сутки для семьи или большой компании друзей. А...',
-    date: '22.02.2022',
-    link: 'string',
-},{
-    id: 1,
-    imgUrl: newsPhoto,
-    title: 'Линия Сталина: суровый отдых в усадьбах на сутки',
-    desc: 'Чем заняться в выходные? Когда нет безотлагательных домашних дел, а на улице хорошая погода, хочется уехать из города, чтобы сменить обстановку. Например, снять коттедж на сутки для семьи или большой компании друзей. А...',
-    date: '22.02.2022',
-    link: 'string',
-}, {
-    id: 1,
-    imgUrl: newsPhoto,
-    title: 'Линия Сталина: суровый отдых в усадьбах на сутки',
-    desc: 'Чем заняться в выходные? Когда нет безотлагательных домашних дел, а на улице хорошая погода, хочется уехать из города, чтобы сменить обстановку. Например, снять коттедж на сутки для семьи или большой компании друзей. А...',
-    date: '22.02.2022',
-    link: 'string',
-}, {
-    id: 1,
-    imgUrl: newsPhoto,
-    title: 'Линия Сталина: суровый отдых в усадьбах на сутки',
-    desc: 'Чем заняться в выходные? Когда нет безотлагательных домашних дел, а на улице хорошая погода, хочется уехать из города, чтобы сменить обстановку. Например, снять коттедж на сутки для семьи или большой компании друзей. А...',
-    date: '22.02.2022',
-    link: 'string',}
-]
+import {newsModel} from "../../entities/news";
 
 export const News = () => {
+    const {data: news = []} = newsModel.newsApi.useGetNewsAllQuery('');
+
     return (
         <div className={cls.news}>
             <div className='container'>
-
-                <BreadCrumbs />
-
+                <BreadCrumbs/>
                 <div className={cls.news__header}>
                     <h3 className={cls.news__title}>Новости</h3>
-
-                   <Search />
+                    <Search/>
                 </div>
                 <div className={cls.news__list}>
-                    {arrNews.map((item, index) => {
-                       return (<NewsItem className={cls.news__item} key={index} data={item}/>)
-                    }
-                    )}
+                    {news.map(item => (
+                        <NewsItem key={item.id} data={item}/>
+                    ))}
                 </div>
-                <Pagination />
+                <Pagination/>
             </div>
         </div>
     );

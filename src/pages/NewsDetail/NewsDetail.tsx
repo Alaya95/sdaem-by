@@ -1,37 +1,14 @@
 import React from 'react';
 import cls from './newsDetail.module.scss';
-import newsPhoto from "../../app/assets/img/newphoto.png";
 import {NewsItem} from "../../features/NewsItem/NewsItem";
 import {DateCustom} from "../../shared/DateCustom/DateCustom";
 import {SocialsIcons} from "../../shared/SocialIcons/SocialIcons";
 import NewsPhoto from '../../app/assets/img/newphoto.png'
+import {newsModel} from '../../entities/news'
 
-const arrNews = [{
-    id: 1,
-    imgUrl: newsPhoto,
-    title: 'Линия Сталина: суровый отдых в усадьбах на сутки',
-    desc: 'Чем заняться в выходные? Когда нет безотлагательных домашних дел, а на улице хорошая погода, хочется уехать из города, чтобы сменить обстановку. Например, снять коттедж на сутки для семьи или большой компании друзей. А...',
-    date: '22.02.2022',
-    link: 'string',
-},
-    {
-        id: 2,
-        imgUrl: newsPhoto,
-        title: 'Линия Сталина: суровый отдых в усадьбах на сутки',
-        desc: 'Чем заняться в выходные? Когда нет безотлагательных домашних дел, а на улице хорошая погода, хочется уехать из города, чтобы сменить обстановку. Например, снять коттедж на сутки для семьи или большой компании друзей. А...',
-        date: '22.02.2022',
-        link: 'string',
-    },
-    {
-        id: 3,
-        imgUrl: newsPhoto,
-        title: 'Линия Сталина: суровый отдых в усадьбах на сутки',
-        desc: 'Чем заняться в выходные? Когда нет безотлагательных домашних дел, а на улице хорошая погода, хочется уехать из города, чтобы сменить обстановку. Например, снять коттедж на сутки для семьи или большой компании друзей. А...',
-        date: '22.02.2022',
-        link: 'string',
-    }
-]
 export const NewsDetail = () => {
+    const {data:news = []} = newsModel.newsApi.useGetNewsAllQuery('');
+
     return (
         <div className={cls.news}>
             <div className={cls.news__details}>
@@ -92,21 +69,15 @@ export const NewsDetail = () => {
                 </div>
             </div>
 
-
-
-
-
             <div className={cls.news__recommend}>
                 <p className={cls.title}>Читайте также</p>
 
                 <div className={cls.news__wrapper}>
-                    {arrNews.map((item, index) => {
-                            return (<NewsItem className={cls.news__item} key={index} data={item}/>)
-                        }
-                    )}
+                    {news.slice(0, 3).map(item =>(
+                        <NewsItem className={cls.news__item} key={item.id} data={item}/>
+                    ))}
                 </div>
             </div>
         </div>
-
     );
 }
