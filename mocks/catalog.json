@@ -1,13 +1,19 @@
 [
   {
     "id": 1,
-    "rentType": "",
-    "address": "",
-    "metro": "",
-    "district": "",
-    "price": "",
+    "imgUrl": [
+      "https://severdv.ru/wp-content/uploads/2020/06/stil-kontemporari.jpg",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/apartments-gallery.png?raw=true",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/newphoto.png?raw=true"
+    ],
+    "rentId": 1,
+    "citiesId": 5,
+    "metroId": 2,
+    "districtId": 1,
+    "address": "б-р Мулявина, д. 10",
+    "price": "65.00 BYN",
     "perDay": "",
-    "rooms": "",
+    "roomsId": 4,
     "persons": "",
     "description": [
       "Описание квартиры 1 абзац",
@@ -15,11 +21,620 @@
     ],
     "contacts": [
       {
-        "phone": "",
-        "username": "",
-        "email": ""
+        "phone": "8-999-999-99-99",
+        "username": "Rey",
+        "email": "rey@mail.com"
       }
     ],
-    "square": ""
+    "square": "176 m2"
+  },
+  {
+    "id": 2,
+    "imgUrl": [
+      "https://severdv.ru/wp-content/uploads/2020/06/stil-kontemporari.jpg",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/apartments-gallery.png?raw=true",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/newphoto.png?raw=true"
+    ],
+    "rentId": 1,
+    "citiesId": 5,
+    "metroId": 2,
+    "districtId": 1,
+    "address": "б-р Мулявина, д. 10",
+    "price": "65.00 BYN",
+    "perDay": "",
+    "roomsId": 4,
+    "persons": "",
+    "description": [
+      "Описание квартиры 1 абзац",
+      "Описание квартиры 1 абзац"
+    ],
+    "contacts": [
+      {
+        "phone": "8-999-999-99-99",
+        "username": "Rey",
+        "email": "rey@mail.com"
+      }
+    ],
+    "square": "176 m2"
+  },
+  {
+    "id": 3,
+    "imgUrl": [
+      "https://severdv.ru/wp-content/uploads/2020/06/stil-kontemporari.jpg",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/apartments-gallery.png?raw=true",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/newphoto.png?raw=true"
+    ],
+    "rentId": 1,
+    "citiesId": 5,
+    "metroId": 2,
+    "districtId": 1,
+    "address": "б-р Мулявина, д. 10",
+    "price": "65.00 BYN",
+    "perDay": "",
+    "roomsId": 4,
+    "persons": "",
+    "description": [
+      "Описание квартиры 1 абзац",
+      "Описание квартиры 1 абзац"
+    ],
+    "contacts": [
+      {
+        "phone": "8-999-999-99-99",
+        "username": "Rey",
+        "email": "rey@mail.com"
+      }
+    ],
+    "square": "176 m2"
+  },
+  {
+    "id": 4,
+    "imgUrl": [
+      "https://severdv.ru/wp-content/uploads/2020/06/stil-kontemporari.jpg",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/apartments-gallery.png?raw=true",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/newphoto.png?raw=true"
+    ],
+    "rentId": 1,
+    "citiesId": 5,
+    "metroId": 2,
+    "districtId": 1,
+    "address": "б-р Мулявина, д. 10",
+    "price": "65.00 BYN",
+    "perDay": "",
+    "roomsId": 4,
+    "persons": "",
+    "description": [
+      "Описание квартиры 1 абзац",
+      "Описание квартиры 1 абзац"
+    ],
+    "contacts": [
+      {
+        "phone": "8-999-999-99-99",
+        "username": "Rey",
+        "email": "rey@mail.com"
+      }
+    ],
+    "square": "176 m2"
+  },
+  {
+    "id": 5,
+    "imgUrl": [
+      "https://severdv.ru/wp-content/uploads/2020/06/stil-kontemporari.jpg",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/apartments-gallery.png?raw=true",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/newphoto.png?raw=true"
+    ],
+    "rentId": 1,
+    "citiesId": 5,
+    "metroId": 2,
+    "districtId": 1,
+    "address": "б-р Мулявина, д. 10",
+    "price": "65.00 BYN",
+    "perDay": "",
+    "roomsId": 4,
+    "persons": "",
+    "description": [
+      "Описание квартиры 1 абзац",
+      "Описание квартиры 1 абзац"
+    ],
+    "contacts": [
+      {
+        "phone": "8-999-999-99-99",
+        "username": "Rey",
+        "email": "rey@mail.com"
+      }
+    ],
+    "square": "176 m2"
+  },
+  {
+    "id": 6,
+    "imgUrl": [
+      "https://severdv.ru/wp-content/uploads/2020/06/stil-kontemporari.jpg",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/apartments-gallery.png?raw=true",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/newphoto.png?raw=true"
+    ],
+    "rentId": 1,
+    "citiesId": 5,
+    "metroId": 2,
+    "districtId": 1,
+    "address": "б-р Мулявина, д. 10",
+    "price": "65.00 BYN",
+    "perDay": "",
+    "roomsId": 4,
+    "persons": "",
+    "description": [
+      "Описание квартиры 1 абзац",
+      "Описание квартиры 1 абзац"
+    ],
+    "contacts": [
+      {
+        "phone": "8-999-999-99-99",
+        "username": "Rey",
+        "email": "rey@mail.com"
+      }
+    ],
+    "square": "176 m2"
+  },
+  {
+    "id": 7,
+    "imgUrl": [
+      "https://severdv.ru/wp-content/uploads/2020/06/stil-kontemporari.jpg",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/apartments-gallery.png?raw=true",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/newphoto.png?raw=true"
+    ],
+    "rentId": 1,
+    "citiesId": 5,
+    "metroId": 2,
+    "districtId": 1,
+    "address": "б-р Мулявина, д. 10",
+    "price": "65.00 BYN",
+    "perDay": "",
+    "roomsId": 4,
+    "persons": "",
+    "description": [
+      "Описание квартиры 1 абзац",
+      "Описание квартиры 1 абзац"
+    ],
+    "contacts": [
+      {
+        "phone": "8-999-999-99-99",
+        "username": "Rey",
+        "email": "rey@mail.com"
+      }
+    ],
+    "square": "176 m2"
+  },
+  {
+    "id": 8,
+    "imgUrl": [
+      "https://severdv.ru/wp-content/uploads/2020/06/stil-kontemporari.jpg",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/apartments-gallery.png?raw=true",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/newphoto.png?raw=true"
+    ],
+    "rentId": 1,
+    "citiesId": 5,
+    "metroId": 2,
+    "districtId": 1,
+    "address": "б-р Мулявина, д. 10",
+    "price": "65.00 BYN",
+    "perDay": "",
+    "roomsId": 4,
+    "persons": "",
+    "description": [
+      "Описание квартиры 1 абзац",
+      "Описание квартиры 1 абзац"
+    ],
+    "contacts": [
+      {
+        "phone": "8-999-999-99-99",
+        "username": "Rey",
+        "email": "rey@mail.com"
+      }
+    ],
+    "square": "176 m2"
+  },
+  {
+    "id": 9,
+    "imgUrl": [
+      "https://severdv.ru/wp-content/uploads/2020/06/stil-kontemporari.jpg",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/apartments-gallery.png?raw=true",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/newphoto.png?raw=true"
+    ],
+    "rentId": 1,
+    "citiesId": 5,
+    "metroId": 2,
+    "districtId": 1,
+    "address": "б-р Мулявина, д. 10",
+    "price": "65.00 BYN",
+    "perDay": "",
+    "roomsId": 4,
+    "persons": "",
+    "description": [
+      "Описание квартиры 1 абзац",
+      "Описание квартиры 1 абзац"
+    ],
+    "contacts": [
+      {
+        "phone": "8-999-999-99-99",
+        "username": "Rey",
+        "email": "rey@mail.com"
+      }
+    ],
+    "square": "176 m2"
+  },
+  {
+    "id": 10,
+    "imgUrl": [
+      "https://severdv.ru/wp-content/uploads/2020/06/stil-kontemporari.jpg",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/apartments-gallery.png?raw=true",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/newphoto.png?raw=true"
+    ],
+    "rentId": 1,
+    "citiesId": 5,
+    "metroId": 2,
+    "districtId": 1,
+    "address": "б-р Мулявина, д. 10",
+    "price": "65.00 BYN",
+    "perDay": "",
+    "roomsId": 4,
+    "persons": "",
+    "description": [
+      "Описание квартиры 1 абзац",
+      "Описание квартиры 1 абзац"
+    ],
+    "contacts": [
+      {
+        "phone": "8-999-999-99-99",
+        "username": "Rey",
+        "email": "rey@mail.com"
+      }
+    ],
+    "square": "176 m2"
+  },
+  {
+    "id": 11,
+    "imgUrl": [
+      "https://severdv.ru/wp-content/uploads/2020/06/stil-kontemporari.jpg",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/apartments-gallery.png?raw=true",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/newphoto.png?raw=true"
+    ],
+    "rentId": 1,
+    "citiesId": 5,
+    "metroId": 2,
+    "districtId": 1,
+    "address": "б-р Мулявина, д. 10",
+    "price": "65.00 BYN",
+    "perDay": "",
+    "roomsId": 4,
+    "persons": "",
+    "description": [
+      "Описание квартиры 1 абзац",
+      "Описание квартиры 1 абзац"
+    ],
+    "contacts": [
+      {
+        "phone": "8-999-999-99-99",
+        "username": "Rey",
+        "email": "rey@mail.com"
+      }
+    ],
+    "square": "176 m2"
+  },
+  {
+    "id": 12,
+    "imgUrl": [
+      "https://severdv.ru/wp-content/uploads/2020/06/stil-kontemporari.jpg",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/apartments-gallery.png?raw=true",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/newphoto.png?raw=true"
+    ],
+    "rentId": 1,
+    "citiesId": 5,
+    "metroId": 2,
+    "districtId": 1,
+    "address": "б-р Мулявина, д. 10",
+    "price": "65.00 BYN",
+    "perDay": "",
+    "roomsId": 4,
+    "persons": "",
+    "description": [
+      "Описание квартиры 1 абзац",
+      "Описание квартиры 1 абзац"
+    ],
+    "contacts": [
+      {
+        "phone": "8-999-999-99-99",
+        "username": "Rey",
+        "email": "rey@mail.com"
+      }
+    ],
+    "square": "176 m2"
+  },
+  {
+    "id": 13,
+    "imgUrl": [
+      "https://severdv.ru/wp-content/uploads/2020/06/stil-kontemporari.jpg",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/apartments-gallery.png?raw=true",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/newphoto.png?raw=true"
+    ],
+    "rentId": 1,
+    "citiesId": 5,
+    "metroId": 2,
+    "districtId": 1,
+    "address": "б-р Мулявина, д. 10",
+    "price": "65.00 BYN",
+    "perDay": "",
+    "roomsId": 4,
+    "persons": "",
+    "description": [
+      "Описание квартиры 1 абзац",
+      "Описание квартиры 1 абзац"
+    ],
+    "contacts": [
+      {
+        "phone": "8-999-999-99-99",
+        "username": "Rey",
+        "email": "rey@mail.com"
+      }
+    ],
+    "square": "176 m2"
+  },
+  {
+    "id": 14,
+    "imgUrl": [
+      "https://severdv.ru/wp-content/uploads/2020/06/stil-kontemporari.jpg",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/apartments-gallery.png?raw=true",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/newphoto.png?raw=true"
+    ],
+    "rentId": 1,
+    "citiesId": 5,
+    "metroId": 2,
+    "districtId": 1,
+    "address": "б-р Мулявина, д. 10",
+    "price": "65.00 BYN",
+    "perDay": "",
+    "roomsId": 4,
+    "persons": "",
+    "description": [
+      "Описание квартиры 1 абзац",
+      "Описание квартиры 1 абзац"
+    ],
+    "contacts": [
+      {
+        "phone": "8-999-999-99-99",
+        "username": "Rey",
+        "email": "rey@mail.com"
+      }
+    ],
+    "square": "176 m2"
+  },
+  {
+    "id": 15,
+    "imgUrl": [
+      "https://severdv.ru/wp-content/uploads/2020/06/stil-kontemporari.jpg",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/apartments-gallery.png?raw=true",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/newphoto.png?raw=true"
+    ],
+    "rentId": 1,
+    "citiesId": 5,
+    "metroId": 2,
+    "districtId": 1,
+    "address": "б-р Мулявина, д. 10",
+    "price": "65.00 BYN",
+    "perDay": "",
+    "roomsId": 4,
+    "persons": "",
+    "description": [
+      "Описание квартиры 1 абзац",
+      "Описание квартиры 1 абзац"
+    ],
+    "contacts": [
+      {
+        "phone": "8-999-999-99-99",
+        "username": "Rey",
+        "email": "rey@mail.com"
+      }
+    ],
+    "square": "176 m2"
+  },
+  {
+    "id": 16,
+    "imgUrl": [
+      "https://severdv.ru/wp-content/uploads/2020/06/stil-kontemporari.jpg",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/apartments-gallery.png?raw=true",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/newphoto.png?raw=true"
+    ],
+    "rentId": 1,
+    "citiesId": 5,
+    "metroId": 2,
+    "districtId": 1,
+    "address": "б-р Мулявина, д. 10",
+    "price": "65.00 BYN",
+    "perDay": "",
+    "roomsId": 4,
+    "persons": "",
+    "description": [
+      "Описание квартиры 1 абзац",
+      "Описание квартиры 1 абзац"
+    ],
+    "contacts": [
+      {
+        "phone": "8-999-999-99-99",
+        "username": "Rey",
+        "email": "rey@mail.com"
+      }
+    ],
+    "square": "176 m2"
+  },
+  {
+    "id": 17,
+    "imgUrl": [
+      "https://severdv.ru/wp-content/uploads/2020/06/stil-kontemporari.jpg",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/apartments-gallery.png?raw=true",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/newphoto.png?raw=true"
+    ],
+    "rentId": 1,
+    "citiesId": 5,
+    "metroId": 2,
+    "districtId": 1,
+    "address": "б-р Мулявина, д. 10",
+    "price": "65.00 BYN",
+    "perDay": "",
+    "roomsId": 4,
+    "persons": "",
+    "description": [
+      "Описание квартиры 1 абзац",
+      "Описание квартиры 1 абзац"
+    ],
+    "contacts": [
+      {
+        "phone": "8-999-999-99-99",
+        "username": "Rey",
+        "email": "rey@mail.com"
+      }
+    ],
+    "square": "176 m2"
+  },
+  {
+    "id": 18,
+    "imgUrl": [
+      "https://severdv.ru/wp-content/uploads/2020/06/stil-kontemporari.jpg",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/apartments-gallery.png?raw=true",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/newphoto.png?raw=true"
+    ],
+    "rentId": 1,
+    "citiesId": 5,
+    "metroId": 2,
+    "districtId": 1,
+    "address": "б-р Мулявина, д. 10",
+    "price": "65.00 BYN",
+    "perDay": "",
+    "roomsId": 4,
+    "persons": "",
+    "description": [
+      "Описание квартиры 1 абзац",
+      "Описание квартиры 1 абзац"
+    ],
+    "contacts": [
+      {
+        "phone": "8-999-999-99-99",
+        "username": "Rey",
+        "email": "rey@mail.com"
+      }
+    ],
+    "square": "176 m2"
+  },
+  {
+    "id": 19,
+    "imgUrl": [
+      "https://severdv.ru/wp-content/uploads/2020/06/stil-kontemporari.jpg",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/apartments-gallery.png?raw=true",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/newphoto.png?raw=true"
+    ],
+    "rentId": 1,
+    "citiesId": 5,
+    "metroId": 2,
+    "districtId": 1,
+    "address": "б-р Мулявина, д. 10",
+    "price": "65.00 BYN",
+    "perDay": "",
+    "roomsId": 4,
+    "persons": "",
+    "description": [
+      "Описание квартиры 1 абзац",
+      "Описание квартиры 1 абзац"
+    ],
+    "contacts": [
+      {
+        "phone": "8-999-999-99-99",
+        "username": "Rey",
+        "email": "rey@mail.com"
+      }
+    ],
+    "square": "176 m2"
+  },
+  {
+    "id": 20,
+    "imgUrl": [
+      "https://severdv.ru/wp-content/uploads/2020/06/stil-kontemporari.jpg",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/apartments-gallery.png?raw=true",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/newphoto.png?raw=true"
+    ],
+    "rentId": 1,
+    "citiesId": 5,
+    "metroId": 2,
+    "districtId": 1,
+    "address": "б-р Мулявина, д. 10",
+    "price": "65.00 BYN",
+    "perDay": "",
+    "roomsId": 4,
+    "persons": "",
+    "description": [
+      "Описание квартиры 1 абзац",
+      "Описание квартиры 1 абзац"
+    ],
+    "contacts": [
+      {
+        "phone": "8-999-999-99-99",
+        "username": "Rey",
+        "email": "rey@mail.com"
+      }
+    ],
+    "square": "176 m2"
+  },
+  {
+    "id": 21,
+    "imgUrl": [
+      "https://severdv.ru/wp-content/uploads/2020/06/stil-kontemporari.jpg",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/apartments-gallery.png?raw=true",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/newphoto.png?raw=true"
+    ],
+    "rentId": 1,
+    "citiesId": 5,
+    "metroId": 2,
+    "districtId": 1,
+    "address": "б-р Мулявина, д. 10",
+    "price": "65.00 BYN",
+    "perDay": "",
+    "roomsId": 4,
+    "persons": "",
+    "description": [
+      "Описание квартиры 1 абзац",
+      "Описание квартиры 1 абзац"
+    ],
+    "contacts": [
+      {
+        "phone": "8-999-999-99-99",
+        "username": "Rey",
+        "email": "rey@mail.com"
+      }
+    ],
+    "square": "176 m2"
+  },
+  {
+    "id": 22,
+    "imgUrl": [
+      "https://severdv.ru/wp-content/uploads/2020/06/stil-kontemporari.jpg",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/apartments-gallery.png?raw=true",
+      "https://github.com/Alaya95/sdaem-by/blob/development/src/app/assets/img/newphoto.png?raw=true"
+    ],
+    "rentId": 1,
+    "citiesId": 5,
+    "metroId": 2,
+    "districtId": 1,
+    "address": "б-р Мулявина, д. 10",
+    "price": "65.00 BYN",
+    "perDay": "",
+    "roomsId": 4,
+    "persons": "",
+    "description": [
+      "Описание квартиры 1 абзац",
+      "Описание квартиры 1 абзац"
+    ],
+    "contacts": [
+      {
+        "phone": "8-999-999-99-99",
+        "username": "Rey",
+        "email": "rey@mail.com"
+      }
+    ],
+    "square": "176 m2"
   }
 ]
