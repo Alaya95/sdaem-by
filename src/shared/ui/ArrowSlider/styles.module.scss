@@ -1,0 +1,37 @@
+@import "src/app/styles/mixins";
+
+.arrows {
+  @include flex(row, center, center);
+
+  width: 30px;
+  height: 30px;
+
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+
+  & svg > path {
+    stroke: #F8F8F8;
+  }
+}
+
+.next {
+  right: 10px;
+}
+
+.prev {
+  left: 10px;
+
+  & svg {
+    transform: rotate(180deg);
+  }
+}
+
+.next, .prev {
+  z-index: 10;
+
+  &::before {
+    content: "";
+    display: none;
+  }
+}
