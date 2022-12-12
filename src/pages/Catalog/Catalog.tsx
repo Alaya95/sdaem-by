@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState} from "react";
 import cls from "./catalog.module.scss";
 
 import {BreadCrumbs} from "../../widgets/BreadCrumbs/BreadCrumbs";
@@ -15,6 +15,7 @@ import {Checkbox} from "../../shared/Checkbox/Checkbox";
 import classNames from "classnames";
 import {Sorting} from "../../features/Sorting/Sorting";
 import {SocialsIcons} from "../../shared/SocialIcons/SocialIcons";
+import {catalogModel} from '../../entities/catalog';
 
 let cx = classNames.bind(cls);
 
@@ -32,6 +33,9 @@ export const Catalog = () => {
     const toggleMoreOptionsFilter = () => {
         setActiveMoreOptionsFilter(!activeMoreOptionFilter);
     }
+
+    const {data: catalog = []} = catalogModel.catalogApi.useGetCatalogAllQuery('');
+
     return (
         <div className={cls.catalog}>
             <div className='container'>
@@ -41,8 +45,8 @@ export const Catalog = () => {
                 <div className={cls.catalog__recommend}>
                     <div className={cls.recommend__title}></div>
                     <div className={cls.recommend__wrapper}>
-                        {recommendApartments.map((item) => (
-                            <a className={cls.recommend__link} id={item.id}>
+                        {recommendApartments.map((item, index) => (
+                            <a key={index} className={cls.recommend__link} id={item.id}>
                                 {item.name}
                             </a>
                         ))}
@@ -92,16 +96,13 @@ export const Catalog = () => {
                             </div>
                         </div>
                     </div>
-                    <div className={cx(
-                        cls.filter__bottom,
-                        {[cls.active]: activeMoreOptionFilter}
-                    )}>
+                    <div className={cx(cls.filter__bottom, {[cls.active]: activeMoreOptionFilter})}>
                         <div className='container'>
                             <div className={cls.filter__options}>
                                 <div className={cls.filter__selects}>
-                                    <Select className={cls.filter__select} label={"спальные места"} dataArr={ROOMS}/>
-                                    <Select className={cls.filter__select} label={"спальные места"} dataArr={ROOMS}/>
-                                    <Select className={cls.filter__select} label={"спальные места"} dataArr={ROOMS}/>
+                                    <Select className={cls.filter__select} dataArr={ROOMS}/>
+                                    <Select className={cls.filter__select} dataArr={ROOMS}/>
+                                    <Select className={cls.filter__select} dataArr={ROOMS}/>
                                 </div>
 
                                 {checkboxFilter.map(({id, name}, index) => (
@@ -113,7 +114,7 @@ export const Catalog = () => {
                 </div>
                 <div className={cls.catalog__sort}>
                     <div className="container">
-                        <Sorting />
+                        <Sorting/>
                     </div>
                 </div>
             </div>
@@ -121,18 +122,15 @@ export const Catalog = () => {
                 <div className={cls.list}>
                     <h3 className={cls.list__title}>Найдено 234 результата</h3>
                     <div className={cls.list__wrapper}>
-                        <CatalogItem/>
-                        <CatalogItem/>
-                        <CatalogItem/>
-                        <CatalogItem/>
-                        <CatalogItem/>
-                        <CatalogItem/>
+                        {catalog.map((item, index) => (
+                            <CatalogItem key={index} data={item}/>
+                        ))}
                     </div>
                     <div className={cls.list__footer}>
                         <Pagination/>
                         <div className={cls.share}>
                             <p>Поделиться: </p>
-                            <SocialsIcons />
+                            <SocialsIcons/>
                         </div>
                     </div>
                 </div>
@@ -143,7 +141,7 @@ export const Catalog = () => {
                         <h3 className={cls.about__title}>Показать найденные квартиры на карте</h3>
                         <p className={cls.about__text}> Ищите новостройки рядом с работой, парком или родственниками</p>
 
-                        <Button className={cls.about__btn}><LocationSvg /> Открыть карту</Button>
+                        <Button className={cls.about__btn}><LocationSvg/> Открыть карту</Button>
                     </div>
                 </div>
             </div>
