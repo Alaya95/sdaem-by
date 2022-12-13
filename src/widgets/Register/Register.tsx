@@ -1,9 +1,9 @@
 import React from 'react';
-import {PopUp} from "../../shared/PopUp/PopUp";
+import {PopUp} from "../../shared/ui/PopUp/PopUp";
 import cls from './register.module.scss';
-import {Input} from "../../shared/Input/Input";
-import {Checkbox} from "../../shared/Checkbox/Checkbox";
-import {Button} from "../../shared/Button/Button";
+import {Input} from "../../shared/ui/Input/Input";
+import {Checkbox} from "../../shared/ui/Checkbox/Checkbox";
+import {Button} from "../../shared/ui/Button/Button";
 
 export const Register = () => {
     return (

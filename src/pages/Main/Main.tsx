@@ -7,9 +7,9 @@ import {FLAT_DATA, APARTMENTS_DATA, POPULARITY_DATA, GALLERY_CARDS, CARD_DATA} f
 import {ReactComponent as ArrowSvg} from "../../app/assets/icons/chevron-down.svg";
 import {ReactComponent as PointSvg} from "../../app/assets/icons/points.svg";
 import classNames from "classnames";
-import {Button} from "../../shared/Button/Button";
+import {Button} from "../../shared/ui/Button/Button";
 import {CatalogItem} from "../../features/CatalogItem/CatalogItem";
-import {Select} from "../../shared/Select/Select";
+import {Select} from "../../shared/ui/Select/Select";
 import {GalleryCard} from "../../features/GalleryCard/GalleryCard";
 import {citiesModel} from '../../entities/cities';
 import {newsModel} from '../../entities/news';
@@ -162,7 +162,7 @@ export const Main = () => {
                                             <Link to={'/news'}>{title}</Link>
                                             <span>{date}</span>
                                         </div>
-                                        {index != (news.length - 1) && <hr/>}
+                                        {index !== (news.length - 1) && <hr/>}
                                     </>
                                 ))}
                             </div>

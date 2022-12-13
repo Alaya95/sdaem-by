@@ -31,7 +31,6 @@
     margin-bottom: 1.5rem;
     color: var(--dark-purple);
     @include userSelect(none);
-    @include userSelect(none);
   }
 
   &__subtitle {
@@ -88,7 +87,7 @@
 
   &__link {
     @include font(600, 1.4rem, 1.7rem);
-    @include flex(column, normal, normal);
+    @include flex(column, flex-start, flex-start);
     @include userSelect(none);
 
     & a {
@@ -111,7 +110,7 @@
   }
 
   &__more {
-    @include flex(row, center, normal);
+    @include flex(row, center, flex-start);
     @include font(700, 1.4rem, 1.7rem);
     color: var(--dark-purple);
 
@@ -228,7 +227,7 @@
   }
 
   &__footer {
-    @include flex(row, center, normal);
+    @include flex(row, center, flex-start);
 
 
     & p {
@@ -257,11 +256,11 @@
 
 .gallery {
   margin-bottom: 9rem;
-  @include flex(row, normal, space-between);
+  @include flex(row, flex-start, space-between);
   gap: 3rem;
 
   &__cards {
-    @include flex(row, center, start);
+    @include flex(row, center, flex-start);
     flex-wrap: wrap;
     gap: 3rem;
     height: fit-content;
@@ -271,7 +270,7 @@
   //&__sidebar {}
 
   &__links {
-    @include flex(column, start, center);
+    @include flex(column, flex-start, center);
     margin-bottom: 4rem;
 
     & h4 {

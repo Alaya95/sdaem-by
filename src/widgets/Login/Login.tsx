@@ -1,11 +1,11 @@
 import React from 'react';
 import cls from './login.module.scss';
-import {Input} from "../../shared/Input/Input";
+import {Input} from "../../shared/ui/Input/Input";
 import {ReactComponent as UserSvg} from "../../app/assets/icons/user.svg";
 import {ReactComponent as PasswordSvg} from "../../app/assets/icons/password-lock.svg";
-import {SwitchCheckbox} from "../../shared/SwitchCheckbox/SwitchCheckbox";
-import {PopUp} from "../../shared/PopUp/PopUp";
-import {Button} from "../../shared/Button/Button";
+import {SwitchCheckbox} from "../../shared/ui/SwitchCheckbox/SwitchCheckbox";
+import {PopUp} from "../../shared/ui/PopUp/PopUp";
+import {Button} from "../../shared/ui/Button/Button";
 
 export const Login = () => {
     return (
