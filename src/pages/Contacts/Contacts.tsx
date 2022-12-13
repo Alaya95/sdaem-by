@@ -1,8 +1,8 @@
 import React from "react";
 import cls from './contacts.module.scss';
 
-import {Input} from "../../shared/Input/Input";
-import {Button} from "../../shared/Button/Button";
+import {Input} from "../../shared/ui/Input/Input";
+import {Button} from "../../shared/ui/Button/Button";
 
 import {ReactComponent as UserSvg} from "../../app/assets/icons/user.svg";
 import {ReactComponent as EmailSvg} from "../../app/assets/icons/socials/mail.svg";
@@ -72,13 +72,13 @@ export const Contacts = () => {
                         <Button className={cls.btn} colors={'primary'}>Отправить</Button>
                     </div>
                     <div className={cls.social}>
-                        <a className={cls.social__link} href="#">
+                        <a className={cls.social__link} href="https://vk.com">
                             <VkSvg/>
                         </a>
-                        <a className={cls.social__link} href="#">
+                        <a className={cls.social__link} href="https://vk.com">
                             <FacebookSvg/>
                         </a>
-                        <a className={cls.social__link} href="#">
+                        <a className={cls.social__link} href="https://vk.com">
                             <InstagramSvg/>
                         </a>
                     </div>

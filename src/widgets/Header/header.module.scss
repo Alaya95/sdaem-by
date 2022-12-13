@@ -1,7 +1,7 @@
 @import 'src/app/styles/mixins';
 
 .header {
-  @include  flex(column, normal, space-between);
+  @include  flex(column, flex-start, space-between);
   width: 100%;
   margin-bottom: 40px;
 
@@ -17,7 +17,7 @@
 }
 
 .subnav {
-  @include  flex(row, center, normal);
+  @include  flex(row, center, flex-start);
 
   &__link {
     display: flex;

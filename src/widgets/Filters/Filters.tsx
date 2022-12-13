@@ -1,5 +1,5 @@
 import React, { useState} from 'react';
-import {Select} from "../../shared/Select/Select";
+import {Select} from "../../shared/ui/Select/Select";
 import { ReactComponent as SettingSvg }  from '../../app/assets/icons/setting.svg';
 import { ReactComponent as LocationSvg }  from '../../app/assets/icons/location.svg';
 import { ReactComponent as ArrowSvg }  from '../../app/assets/icons/chevron-down.svg';

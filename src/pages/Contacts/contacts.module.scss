@@ -7,7 +7,7 @@
 }
 
 .wrapper {
-  @include flex(row, start, space-between);
+  @include flex(row, flex-start, space-between);
   padding: 7rem 0;
 }
 
@@ -29,8 +29,7 @@
 
   &__list {
     & li {
-
-      @include flex(row, center, normal);
+      @include flex(row, center, flex-start);
       margin-bottom: 1rem;
     }
   }

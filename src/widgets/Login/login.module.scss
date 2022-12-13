@@ -1,7 +1,7 @@
 @import '../../app/styles/mixins';
 
 .auth {
-  @include flex(column, normal, center);
+  @include flex(column, flex-start, center);
   padding: 5rem;
   background: var(--white);
 
@@ -21,7 +21,7 @@
 }
 
 .auth__toggle {
-  @include flex(row, center, normal);
+  @include flex(row, center, flex-start);
 
   & span:hover {
     @include userSelect(none);

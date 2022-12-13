@@ -2,19 +2,19 @@ import React, { useState} from "react";
 import cls from "./catalog.module.scss";
 
 import {BreadCrumbs} from "../../widgets/BreadCrumbs/BreadCrumbs";
-import {Select} from "../../shared/Select/Select";
+import {Select} from "../../shared/ui/Select/Select";
 import {CatalogItem} from "../../features/CatalogItem/CatalogItem";
 import {ROOMS} from "../../widgets/Filters/data";
-import {Button} from "../../shared/Button/Button";
+import {Button} from "../../shared/ui/Button/Button";
 import {Pagination} from "../../widgets/Pagination/Pagination";
 import {ReactComponent as LocationSvg} from "../../app/assets/icons/location.svg";
 import {ReactComponent as SettingSvg} from "../../app/assets/icons/setting.svg";
 import {ReactComponent as ArrowSvg} from "../../app/assets/icons/chevron-down.svg";
 import {recommendApartments} from "./data";
-import {Checkbox} from "../../shared/Checkbox/Checkbox";
+import {Checkbox} from "../../shared/ui/Checkbox/Checkbox";
 import classNames from "classnames";
 import {Sorting} from "../../features/Sorting/Sorting";
-import {SocialsIcons} from "../../shared/SocialIcons/SocialIcons";
+import {SocialsIcons} from "../../widgets/SocialIcons/SocialIcons";
 import {catalogModel} from '../../entities/catalog';
 
 let cx = classNames.bind(cls);
@@ -46,7 +46,7 @@ export const Catalog = () => {
                     <div className={cls.recommend__title}></div>
                     <div className={cls.recommend__wrapper}>
                         {recommendApartments.map((item, index) => (
-                            <a key={index} className={cls.recommend__link} id={item.id}>
+                            <a href="https://vk.com" key={index} className={cls.recommend__link} id={item.id}>
                                 {item.name}
                             </a>
                         ))}

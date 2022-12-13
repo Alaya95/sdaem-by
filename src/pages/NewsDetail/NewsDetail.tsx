@@ -1,8 +1,8 @@
 import React from 'react';
 import cls from './newsDetail.module.scss';
 import {NewsItem} from "../../features/NewsItem/NewsItem";
-import {DateCustom} from "../../shared/DateCustom/DateCustom";
-import {SocialsIcons} from "../../shared/SocialIcons/SocialIcons";
+import {DateCustom} from "../../shared/ui/DateCustom/DateCustom";
+import {SocialsIcons} from "../../widgets/SocialIcons/SocialIcons";
 import NewsPhoto from '../../app/assets/img/newphoto.png'
 import {newsModel} from '../../entities/news'
 

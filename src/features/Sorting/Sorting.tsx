@@ -1,8 +1,8 @@
 import React from "react";
 import cls from "./sorting.module.scss";
 
-import {Select} from "../../shared/Select/Select";
-import {Button} from "../../shared/Button/Button";
+import {Select} from "../../shared/ui/Select/Select";
+import {Button} from "../../shared/ui/Button/Button";
 import {catalogSortItems} from "../../pages/Catalog/data";
 
 import {ReactComponent as BurgerMenuSvg} from "../../app/assets/icons/burger-menu.svg";

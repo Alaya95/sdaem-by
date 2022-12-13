@@ -14,19 +14,19 @@ interface SocialIconsTypes {
 export const SocialsIcons:FC <SocialIconsTypes> = () => {
     return (
         <div className={cls.social}>
-            <a className={cls.social__link} href="#">
+            <a className={cls.social__link} href="src/widgets/SocialIcons/SocialIcons#">
                 <VkSvg />
             </a>
-            <a className={cls.social__link} href="#">
+            <a className={cls.social__link} href="src/widgets/SocialIcons/SocialIcons#">
                 <FacebookSvg />
             </a>
-            <a className={cls.social__link} href="#">
+            <a className={cls.social__link} href="src/widgets/SocialIcons/SocialIcons#">
                 <ViberSvg />
             </a>
-            <a className={cls.social__link} href="#">
+            <a className={cls.social__link} href="src/widgets/SocialIcons/SocialIcons#">
                 <TelegramSvg />
             </a>
-            <a className={cls.social__link} href="#">
+            <a className={cls.social__link} href="src/widgets/SocialIcons/SocialIcons#">
                 <WhatsAppSvg />
             </a>
         </div>

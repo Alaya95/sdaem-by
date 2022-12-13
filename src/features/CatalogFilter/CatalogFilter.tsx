@@ -1,11 +1,11 @@
 import React from "react";
 import cls from "./catalogFilter.module.scss";
 import { ROOMS } from "../../widgets/Filters/data";
-import { Select } from "../../shared/Select/Select";
+import { Select } from "../../shared/ui/Select/Select";
 
 import { ReactComponent as SettingSvg } from "../../app/assets/icons/setting.svg";
 import { ReactComponent as LocationSvg } from "../../app/assets/icons/location.svg";
-import { Button } from "../../shared/Button/Button";
+import { Button } from "../../shared/ui/Button/Button";
 import { ReactComponent as ArrowSvg } from "../../app/assets/icons/chevron-down.svg";
 
 export const CatalogFilter = () => {
