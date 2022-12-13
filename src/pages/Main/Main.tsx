@@ -13,10 +13,12 @@ import {Select} from "../../shared/Select/Select";
 import {GalleryCard} from "../../features/GalleryCard/GalleryCard";
 import {citiesModel} from '../../entities/cities';
 import {newsModel} from '../../entities/news';
+import {catalogModel} from '../../entities/catalog';
 
 export const Main = () => {
     const {data: cities = []} = citiesModel.citiesApi.useGetCitiesQuery('');
     const {data: news = []} = newsModel.newsApi.useGetNewsAllQuery('');
+    const {data: catalog = []} = catalogModel.catalogApi.useGetCatalogItemLimitQuery(3);
 
     return (
         <div className={cls.main}>
@@ -74,9 +76,9 @@ export const Main = () => {
                         </div>
                     </div>
                     <div className={cls.rent__wrapper}>
-                        <CatalogItem/>
-                        <CatalogItem/>
-                        <CatalogItem/>
+                        {catalog.map(item => (
+                            <CatalogItem key={item.id} data={item}/>
+                        ))}
                         <div className={cls.arrow}>
                             <button className={cls.arrow__left}>
                                 <ArrowSvg/>
